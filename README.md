@@ -1,4 +1,4 @@
-# GTA 5 için Basit Pusula Komut Dosyası (FiveM) #TR
+# GTA 5 için Basit Pusula (FiveM) #TR
 
 Bu, GTA 5 (FiveM) için oyuncunun yönünü, sokak adını ve bölgesini gösteren basit bir pusula scriptidir. Oyuncunun ekranında bir pusula oluşturmak için NUI kullanır.
 
