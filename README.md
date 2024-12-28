@@ -2,7 +2,7 @@
 
 Bu, GTA 5 (FiveM) için oyuncunun yönünü, sokak adını ve bölgesini gösteren basit bir pusula scriptidir. Oyuncunun ekranında bir pusula oluşturmak için NUI kullanır.
 
-Bu script, VennyV geliştirici ekibinden herayoo'nun yapmış olduğu scriptin görselinden esinlenerek geliştirilmiştir.
+Bu script, VennyV geliştirici ekibinden **herayoo'nun** yapmış olduğu scriptin görselinden esinlenerek geliştirilmiştir.
 
 ## Özellikler
 
@@ -12,7 +12,7 @@ Bu script, VennyV geliştirici ekibinden herayoo'nun yapmış olduğu scriptin g
 - Pusulayı `/pusula` komutu ile açıp kapatabilirsiniz.
 - Hafif ve kullanımı kolay.
 
-### Eksikler
+## Eksikler
 
 - Pusula açık olduğunda karakter seçim ekranında da pusula görünmeye devam ediyor. Bu durumu nasıl düzeltebileceğimi çözemedim. Eğer çözebilen olursa, bana Discord üzerinden ulaşırsa sevinirim.
 - Discord Kullanıcı ID: 333922744238342146 
@@ -54,7 +54,7 @@ Bu proje açık kaynak kodludur ve kullanımı ücretsizdir. Gerektiği gibi de�
 
 This is a simple compass script for GTA 5 (FiveM) that shows the player's direction, street name and area. It uses NUI to create a compass on the player's screen.
 
-This script was inspired by the image of the script made by herayoo from the VennyV developer team.
+This script was inspired by the image of the script made by **herayoo** from the VennyV developer team.
 
 ## Features
 
@@ -64,7 +64,7 @@ This script was inspired by the image of the script made by herayoo from the Ven
 - You can turn the compass on and off with the `/compass` command.
 - Lightweight and easy to use.
 
-### Shortcomings
+## Shortcomings
 
 - When the compass is on, the compass continues to appear on the character selection screen. I can't figure out how to fix this, so if anyone can figure it out, please contact me on Discord.
 - Discord User ID: 333922744238342146 
