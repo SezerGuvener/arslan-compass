@@ -4,6 +4,8 @@ Bu, GTA 5 (FiveM) için oyuncunun yönünü, sokak adını ve bölgesini göster
 
 Bu script, VennyV geliştirici ekibinden **herayoo'nun** yapmış olduğu scriptin görselinden esinlenerek geliştirilmiştir.
 
+[Önizlenim](https://streamable.com/8bo18g) 
+
 ## Özellikler
 
 - Oyuncunun yönünü gösterir (Kuzey, Kuzey-Doğu, Doğu, vb.).
@@ -50,11 +52,13 @@ Bu proje açık kaynak kodludur ve kullanımı ücretsizdir. Gerektiği gibi de�
 
 - **Qaisenix**
 
-# Simple Compass Script for GTA 5 (FiveM) #TR
+# Simple Compass Script for GTA 5 (FiveM) #EN
 
 This is a simple compass script for GTA 5 (FiveM) that shows the player's direction, street name and area. It uses NUI to create a compass on the player's screen.
 
 This script was inspired by the image of the script made by **herayoo** from the VennyV developer team.
+
+[Priview](https://streamable.com/8bo18g) 
 
 ## Features
 
