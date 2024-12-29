@@ -63,11 +63,6 @@ This script was inspired by the image of the script made by **herayoo** from the
 - You can turn the compass on and off with the `/compass` command.
 - Lightweight and easy to use.
 
-## Shortcomings
-
-- When the compass is on, the compass continues to appear on the character selection screen. I can't figure out how to fix this, so if anyone can figure it out, please contact me on Discord.
-- Discord User ID: 333922744238342146 
-
 ## Installation
 
 1. Download the repository or clone it to the `resources` folder on your FiveM server.
