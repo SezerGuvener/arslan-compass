@@ -32,6 +32,26 @@ CreateThread(function()
     end
 end)
 
+RegisterCommand('pusula', function()
+    nuiVisible = not nuiVisible
+    isPusulaToggled = not nuiVisible
+    SendNUIMessage({ show = nuiVisible })
+
+    if nuiVisible then
+        lib.notify({
+            title = 'Pusula',
+            description = 'Pusula açıldı.',
+            type = 'success'
+        })
+    else
+        lib.notify({
+            title = 'Pusula',
+            description = 'Pusula kapatıldı.',
+            type = 'error'
+        })
+    end
+end, false)
+
 -- QBCore OnPlayerLoaded entegrasyonu
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     Wait(2000)
