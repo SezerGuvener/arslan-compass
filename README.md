@@ -14,11 +14,6 @@ Bu script, VennyV geliştirici ekibinden **herayoo'nun** yapmış olduğu script
 - Pusulayı `/pusula` komutu ile açıp kapatabilirsiniz.
 - Hafif ve kullanımı kolay.
 
-## Eksikler
-
-- Pusula açık olduğunda karakter seçim ekranında da pusula görünmeye devam ediyor. Bu durumu nasıl düzeltebileceğimi çözemedim. Eğer çözebilen olursa, bana Discord üzerinden ulaşırsa sevinirim.
-- Discord Kullanıcı ID: 333922744238342146 
-
 ## Kurulum
 
 1. Depoyu indirin veya FiveM sunucunuzdaki `resources` klasörüne klonlayın.
