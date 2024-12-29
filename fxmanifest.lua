@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'Qaisenix'
 description 'Simple Compass Script'
-version '1.0.3'
+version '1.0.4'
 
 ui_page 'html/index.html'
 
