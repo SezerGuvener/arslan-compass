@@ -1,6 +1,4 @@
-local nuiVisible = true
-local isPusulaToggled = true
-
+local nuiVisible = false -- Başlangıçta pusula kapalı
 local directions = {"K", "KD", "D", "GD", "G", "GB", "B", "KB"}
 
 function getDirectionFromHeading(heading)
@@ -10,10 +8,9 @@ end
 
 CreateThread(function()
     while true do
-        local playerPed = PlayerPedId()
-        local playerVehicle = GetVehiclePedIsIn(playerPed, false)
-
-        if playerVehicle ~= 0 or nuiVisible then
+        if nuiVisible then
+            local playerPed = PlayerPedId()
+            local playerVehicle = GetVehiclePedIsIn(playerPed, false)
             local playerPos = GetEntityCoords(playerPed)
             local heading = GetEntityHeading(playerPed)
             local streetHash, crossingHash = GetStreetNameAtCoord(playerPos.x, playerPos.y, playerPos.z)
@@ -21,45 +18,29 @@ CreateThread(function()
             local zoneName = GetLabelText(GetNameOfZone(playerPos.x, playerPos.y, playerPos.z))
             local direction = getDirectionFromHeading(heading)
 
-            if nuiVisible then
-                SendNUIMessage({
-                    show = true,
-                    direction = direction,
-                    street = streetName,
-                    zone = zoneName
-                })
-            end
+            SendNUIMessage({
+                show = true,
+                direction = direction,
+                street = streetName,
+                zone = zoneName
+            })
         else
-            if nuiVisible then
-                SendNUIMessage({ show = false })
-            end
+            SendNUIMessage({ show = false })
         end
 
         Wait(500)
     end
 end)
 
-RegisterCommand('pusula', function()
-    nuiVisible = not nuiVisible
-    isPusulaToggled = not nuiVisible
+-- QBCore OnPlayerLoaded entegrasyonu
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    Wait(2000)
+    nuiVisible = true -- Oyuncu yüklendiğinde pusula açılır
     SendNUIMessage({ show = nuiVisible })
+end)
 
-    if nuiVisible then
-        lib.notify({
-            title = 'Pusula',
-            description = 'Pusula açıldı.',
-            type = 'success'
-        })
-    else
-        lib.notify({
-            title = 'Pusula',
-            description = 'Pusula kapatıldı.',
-            type = 'error'
-        })
-    end
-end, false)
-
-AddEventHandler('playerSpawned', function()
-    nuiVisible = isPusulaToggled
+-- Oyuncu çıktığında pusulayı kapatmak için OnPlayerUnload event'i
+RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
+    nuiVisible = false -- Oyuncu çıkarsa pusula kapatılır
     SendNUIMessage({ show = nuiVisible })
 end)
